@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>QUIZZ</title>
+  </head>
+  <body>
+    <header>
+      <img id="logo" src="/img/nba.svg" />
+      <h1>NBA QUIZZ</h1>
+      <nav>
+        <ul>
+          <li><a href="#person-info">INFO</a></li>
+          <li><a href="#team-questions">TEAM</a></li>
+          <li><a href="#player-questions">Player</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="post" action="">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="person-info">Info Person</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
+          </div>
+          <div class="info">
+            <label for="birth-date"
+              >D.O.B.<span class="sr-only">(Date of Birth)</span></label
+            >
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="team-questions">
+          <h2 id="team-questions">TEAM NBA</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset class="question" name="html-question-one">
+              <legend>
+                Who has the most NBA trophies in history up to now ?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input
+                      type="radio"
+                      id="q1-a1"
+                      name="q1"
+                      value="Boston Celtics"
+                    />
+                    Boston Celtics
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input
+                      type="radio"
+                      id="q1-a2"
+                      name="q1"
+                      value="Los Angeles Lakers"
+                    />
+                    Los Angeles Lakers
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset class="question" name="team-question-two">
+              <legend>Which team has a trophy nba ?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input
+                      type="radio"
+                      id="q2-a1"
+                      name="q2"
+                      value="San Antonio Spurs"
+                    />
+                    San Antonio Spurs
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input
+                      type="radio"
+                      id="q2-a2"
+                      name="q2"
+                      value="Memphis Grizzeli"
+                    />
+                    Memphis Grizzeli
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="player-questions">
+          <h2 id="player-questions">Player</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="selector"
+                >LeBron James is the G.O.A.T of basketball?</label
+              >
+            </div>
+            <div class="answer">
+              <select name="selector" id="selector" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-textarea"
+                >if is "Yes" or "No" write your reponse here.</label
+              >
+            </div>
+            <div class="answer">
+              <textarea
+                id="css-textarea"
+                name="css-questions"
+                rows="5"
+                cols="24"
+                placeholder="write here..."
+              ></textarea>
+            </div>
+          </div>
+        </section>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a
+          href="https://www.nbastore.eu/fr/?_s=gppc&utm_campaign=NBA+Store+-+Brand+-+Core+-+FR+-+FR|18473079324&utm_medium=ppc&ks_id=7083_kw31647373&utm_term=nba%20store&matchtype=e&utm_source=g&target=kwd-12618541&pcrid=625252612959&adposition=&gad_source=1&gclid=CjwKCAiAlcyuBhBnEiwAOGZ2S0ZHRFZCEpq4tX3GI04AXGJYJrApo2vdpGw8AAPcQhWgyajyqyi_uBoChNkQAvD_BwE"
+          >NBA STORE</a
+        ><br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
+  </body>
+</html>
